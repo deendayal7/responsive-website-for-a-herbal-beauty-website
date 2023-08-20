@@ -1,0 +1,136 @@
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --navbar-height: 29px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+#logo {
+    margin: 7px;
+    padding: 7px;
+}
+
+
+#logo img {
+
+    height: 100px;
+    width: 100px;
+    margin: 3px;
+    padding: 3px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    color: blanchedalmond;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 70px;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+    color: white
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#home ::before {
+    content: "";
+    background: url('../food-g27ee9d924_1920.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: .9;
+}
+.h-primary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 7px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Services section  */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
